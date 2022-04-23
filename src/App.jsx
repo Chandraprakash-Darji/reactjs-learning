@@ -1,15 +1,18 @@
-// import Counter from "./Components/Counter";
-import Greet from "./Components/Greet";
+// import Greet from "./Components/Greet";
+// import Welcome from "./Components/Welcome";
 // import Message from "./Components/Message";
-import Welcome from "./Components/Welcome";
+// import Counter from "./Components/Counter";
+// import FunctionClick from "./Components/FunctionClick";
+
+import ClassClick from "./Components/ClassClick";
 
 function App() {
   return (
     <div className="App">
 
-      <Greet name="Bruce" heroName="Batman">
+      {/* <Greet name="Bruce" heroName="Batman">
         <p>This is Childern P</p>
-      </Greet>
+      </Greet> */}
 
       {/* <Greet name="Clark" heroName="SuperMan">
         <button>Action</button>
@@ -21,15 +24,20 @@ function App() {
         <p>This is Childern P</p>
       </Welcome> */}
 
-      <Welcome name="Clark" heroName="SuperMan">
+      {/* <Welcome name="Clark" heroName="SuperMan">
         <button>Action</button>
-      </Welcome>
+      </Welcome> */}
 
       {/* <Welcome name="Tony" heroName="IronMan" /> */}
 
       {/* <Message /> */}
 
       {/* <Counter /> */}
+
+      {/* <FunctionClick/> */}
+
+      <ClassClick/>
+
     </div>
   );
 }

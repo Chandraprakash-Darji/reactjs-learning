@@ -6,12 +6,13 @@
 // import ClassClick from "./Components/ClassClick";
 // import EventBind from "./Components/EventBind";
 // import ParentComponent from "./Components/ParentComponent";
+// import UserGreeting from "./Components/UserGreeting";
 
-import UserGreeting from "./Components/UserGreeting";
+import NameList from "./Components/NameList";
+
 function App() {
   return (
     <div className="App">
-
       {/* <Greet name="Bruce" heroName="Batman">
         <p>This is Childern P</p>
       </Greet> */}
@@ -44,8 +45,10 @@ function App() {
 
       {/* <ParentComponent/> */}
 
-      <UserGreeting/>
+      {/* <UserGreeting/> */}
 
+      <NameList />
+      
     </div>
   );
 }

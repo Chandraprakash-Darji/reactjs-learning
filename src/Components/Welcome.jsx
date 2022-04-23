@@ -1,9 +1,12 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 export default class Welcome extends Component {
   render() {
+    const { name, heroName } = this.props;
     return (
-      <div>Welcome By Class  {this.props.name} a.k.a {this.props.heroName}</div>
-    )
+      <div>
+        Welcome By Class {name} a.k.a {heroName}
+      </div>
+    );
   }
 }

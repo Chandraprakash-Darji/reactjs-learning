@@ -1,14 +1,11 @@
-import React from "react";
-import RefsDemo from "./Components/RefsDemo";
+import FocusInput from "./Components/FocusInput";
 
 const App = () => {
-
-
   return (
     <div
       style={{ display: "grid", placeContent: "center", placeItems: "center" }}
     >
-      <RefsDemo/>
+      <FocusInput />
     </div>
   );
 };

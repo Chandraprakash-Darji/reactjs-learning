@@ -1,9 +1,9 @@
-import Form from "./Components/Form";
+import LifeCycle from "./Components/LifeCycleA";
 
 function App() {
   return (
     <div style={{ display: "grid", placeContent: "center" }}>
-      <Form />
+      <LifeCycle />
     </div>
   );
 }

@@ -7,8 +7,11 @@
 // import EventBind from "./Components/EventBind";
 // import ParentComponent from "./Components/ParentComponent";
 // import UserGreeting from "./Components/UserGreeting";
+// import NameList from "./Components/NameList";
+// import StyleSheet from "./Components/StyleSheet";
+// import Inline from "./Components/InLine";
+// import styles from "./AppStyles.module.css";
 
-import NameList from "./Components/NameList";
 
 function App() {
   return (
@@ -47,8 +50,17 @@ function App() {
 
       {/* <UserGreeting/> */}
 
-      <NameList />
-      
+      {/* <NameList /> */}
+
+      {/* By External Css File */}
+      {/* <StyleSheet primary={true} /> */}
+      {/* Inline Styles */}
+      {/* <Inline /> */}
+      {/* Css Modules */}
+      {/* <h2 className={styles.success}>Success</h2> */}
+      {/* <h2 className={styles.error}>Error</h2> */}
+
+
     </div>
   );
 }

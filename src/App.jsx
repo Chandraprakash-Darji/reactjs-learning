@@ -1,11 +1,11 @@
-import FocusInput from "./Components/FocusInput";
+import FRParentInput from "./Components/FRParentInput";
 
 const App = () => {
   return (
     <div
       style={{ display: "grid", placeContent: "center", placeItems: "center" }}
     >
-      <FocusInput />
+      <FRParentInput />
     </div>
   );
 };

@@ -1,11 +1,11 @@
-import FragmentDemo from "./Components/FragmentDemo";
+import ParentCompo from "./Components/ParentCompo";
 
 const App = () => {
   return (
     <div
-      style={{ display: "grid", placeContent: "center", placeItems: "center" }} 
+      style={{ display: "grid", placeContent: "center", placeItems: "center" }}
     >
-      <FragmentDemo />
+      <ParentCompo />
     </div>
   );
 };

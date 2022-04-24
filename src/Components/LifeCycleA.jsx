@@ -11,7 +11,7 @@ class LifeCycleA extends Component {
     this.handleChangeState = this.handleChangeState.bind(this);
     console.log("LifeCycle A Constructor");
   }
-
+ 
   static getDerivedStateFromProps(props, state) {
     console.log("LifeCylce A getDerivedStateFromProps");
     return null;

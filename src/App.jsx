@@ -1,11 +1,13 @@
-import LifeCycle from "./Components/LifeCycleA";
+import FragmentDemo from "./Components/FragmentDemo";
 
-function App() {
+const App = () => {
   return (
-    <div style={{ display: "grid", placeContent: "center" }}>
-      <LifeCycle />
+    <div
+      style={{ display: "grid", placeContent: "center", placeItems: "center" }} 
+    >
+      <FragmentDemo />
     </div>
   );
-}
+};
 
 export default App;

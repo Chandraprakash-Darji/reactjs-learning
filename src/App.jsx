@@ -1,20 +1,13 @@
-import ErorrBoundry from "./Components/ErorrBoundry";
-import Hero from "./Components/Hero";
+import ClickCounter from "./Components/ClickCounter";
+import HoverCounter from "./Components/HoverCounter";
 
 const App = () => {
   return (
     <div
       style={{ display: "grid", placeContent: "center", placeItems: "center" }}
     >
-      <ErorrBoundry>
-        <Hero heroName="Batman" />
-      </ErorrBoundry>
-      <ErorrBoundry>
-        <Hero heroName="SuperMan" />
-      </ErorrBoundry>
-      <ErorrBoundry>
-        <Hero heroName="Joker" />
-      </ErorrBoundry>
+      <ClickCounter name='CP'/>
+      <HoverCounter/>
     </div>
   );
 };

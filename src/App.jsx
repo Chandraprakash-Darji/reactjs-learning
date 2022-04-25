@@ -1,11 +1,11 @@
-import FRParentInput from "./Components/FRParentInput";
+import PortalDemo from "./Components/PortalDemo";
 
 const App = () => {
   return (
     <div
       style={{ display: "grid", placeContent: "center", placeItems: "center" }}
     >
-      <FRParentInput />
+      <PortalDemo />
     </div>
   );
 };

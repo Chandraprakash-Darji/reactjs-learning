@@ -1,4 +1,5 @@
 import ClassCounter from "./Componets/UseState/ClassCounter";
+import FuncCounter from "./Componets/UseState/FuncCounter";
 
 const App = () => {
   return (
@@ -6,6 +7,7 @@ const App = () => {
       style={{ display: "grid", placeContent: "center", placeItems: "center" }}
     >
       <ClassCounter />
+      <FuncCounter />
     </div>
   );
 };

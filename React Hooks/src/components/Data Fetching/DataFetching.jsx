@@ -2,31 +2,39 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 
 const DataFetching = () => {
-  const [posts, setPosts] = useState([]);
+  const [post, setPost] = useState({});
   const [errorMsg, setErrorMsg] = useState(null);
+  const [postID, setPostID] = useState(1);
+  const [idFromButtonClicked, setIdFromButtonClicked] = useState(1);
 
   useEffect(() => {
     axios
-      .get("https://jsonplaceholder.typicode.com/posts")
+      .get(`https://jsonplaceholder.typicode.com/posts/${idFromButtonClicked}`)
       .then((response) => {
         console.log(response);
-        setPosts(response.data);
+        setPost(response.data);
       })
       .catch((error) => {
         console.error(error);
         setErrorMsg(error.message);
       });
-  }, []);
+  }, [idFromButtonClicked]);
 
+  const handleClick = () => {
+    setIdFromButtonClicked(postID);
+  };
   return (
     <div>
-      DataFetching
-      <ul>
-        {posts.length
-          ? posts.map((post) => <li key={post.id}>{post.title} </li>)
-          : null}
-        {errorMsg ? <li>{errorMsg}</li> : null}
-      </ul>
+      <input
+        type="number"
+        min="1"
+        max="100"
+        value={postID}
+        onChange={(e) => setPostID(e.target.value)}
+      />
+      {post ? <div key={post.id}>{post.title} </div> : null}
+      {errorMsg ? <div>{errorMsg}</div> : null}
+      <button onClick={handleClick}>Find</button>
     </div>
   );
 };

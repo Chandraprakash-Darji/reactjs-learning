@@ -1,9 +1,10 @@
-import ClassCounter from "./components/useEffect/ClassCounter";
+import ClassMouse from "./components/useEffect/ClassMouse";
+import HookMouse from "./components/useEffect/HookMouse";
 
 export default function App() {
   return (
     <div>
-      <ClassCounter />
+      <HookMouse />
     </div>
   );
 }

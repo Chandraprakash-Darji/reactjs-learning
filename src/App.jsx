@@ -1,26 +1,15 @@
-import ClickCounterTwo from "./Components/ClickCounterTwo";
-import CounterTwo from "./Components/CounterTwo";
-import HoverCounterTwo from "./Components/HoverCounterTwo";
-import User from "./Components/User";
+import ComponetC from "./Components/ComponetC";
+import { UserProvider } from "./Components/userContext";
 
 const App = () => {
   return (
     <div
       style={{ display: "grid", placeContent: "center", placeItems: "center" }}
     >
-      {/* <ClickCounterTwo />
-      <HoverCounterTwo />
-      <User render={(isLoggedIn) => (isLoggedIn ? "Rega" : "Guest")} /> */}
-      <CounterTwo>
-        {(count, incrementCount) => (
-          <ClickCounterTwo count={count} incrementCount={incrementCount} />
-        )}
-      </CounterTwo>
-      <CounterTwo>
-        {(count, incrementCount) => (
-          <HoverCounterTwo count={count} incrementCount={incrementCount} />
-        )}
-      </CounterTwo>
+      {/* When there is NO provider in Parent then it will render the Default Value */}
+      <UserProvider value="Vishwas">
+        <ComponetC />
+      </UserProvider>
     </div>
   );
 };

@@ -1,9 +1,11 @@
-import MouseContainer from "./components/useEffect/MouseContainer";
+import IntervalClassCounter from "./components/useEffect/IntervalClassCounter";
+import IntervalHookCounter from "./components/useEffect/IntervalHookCounter";
 
 export default function App() {
   return (
     <div>
-      <MouseContainer/>
+      {/* <IntervalClassCounter /> */}
+      <IntervalHookCounter/>
     </div>
   );
 }

@@ -1,13 +1,9 @@
-import FunCounter from "./components/useEffect/FunCounter";
 import ClassCounter from "./components/useEffect/ClassCounter";
 
-const App = () => {
+export default function App() {
   return (
     <div>
-      {/* <ClassCounter /> */}
-      <FunCounter />
+      <ClassCounter />
     </div>
   );
-};
-
-export default App;
+}

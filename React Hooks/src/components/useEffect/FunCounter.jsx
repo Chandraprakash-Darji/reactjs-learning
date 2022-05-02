@@ -5,6 +5,7 @@ const FunCounter = () => {
 
   useEffect(() => {
     document.title = `Clicked ${count} times`;
+    // [count] will only run useEffect if the count value is changed
   }, [count]);
 
   return (

@@ -1,12 +1,11 @@
-import PostForm from "./Components/HTTP Request/PostForm";
-import PostList from "./Components/HTTP Request/PostList";
+import ClassCounter from "./Componets/UseState/ClassCounter";
 
 const App = () => {
   return (
     <div
       style={{ display: "grid", placeContent: "center", placeItems: "center" }}
     >
-      <PostForm />
+      <ClassCounter />
     </div>
   );
 };

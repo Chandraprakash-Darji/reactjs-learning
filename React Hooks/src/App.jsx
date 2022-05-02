@@ -1,13 +1,9 @@
-import ClassCounter from "./Componets/UseState/ClassCounter";
-import FuncCounter from "./Componets/UseState/FuncCounter";
-import HookCounter from "./Componets/UseState/HookCounter";
+import HookCounterTwo from "./Componets/UseState/HookWithObjects";
 
 const App = () => {
   return (
-    <div
-      style={{ display: "grid", placeContent: "center", placeItems: "center" }}
-    >
-      <HookCounter/>
+    <div>
+      <HookCounterTwo />
     </div>
   );
 };

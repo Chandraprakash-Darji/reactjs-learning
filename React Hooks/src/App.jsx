@@ -1,10 +1,9 @@
-import ClassMouse from "./components/useEffect/ClassMouse";
-import HookMouse from "./components/useEffect/HookMouse";
+import MouseContainer from "./components/useEffect/MouseContainer";
 
 export default function App() {
   return (
     <div>
-      <HookMouse />
+      <MouseContainer/>
     </div>
   );
 }

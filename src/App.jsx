@@ -1,3 +1,4 @@
+import PostForm from "./Components/HTTP Request/PostForm";
 import PostList from "./Components/HTTP Request/PostList";
 
 const App = () => {
@@ -5,7 +6,7 @@ const App = () => {
     <div
       style={{ display: "grid", placeContent: "center", placeItems: "center" }}
     >
-      <PostList />
+      <PostForm />
     </div>
   );
 };

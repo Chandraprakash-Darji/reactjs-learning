@@ -1,34 +1,15 @@
 import "./App.css";
 import Greet from "./components/Props Type/Greet";
-import Person from "./components/Props Type/Person";
-import PersonList from "./components/Props Type/PersonList";
+import Heading from "./components/Props Type/Heading";
+import Oscar from "./components/Props Type/Oscar";
 
 function App() {
-  const personName = {
-    first: "Moon",
-    last: "Light",
-  };
-
-  const nameList = [
-    {
-      first: "Chandra",
-      last: "Prakash",
-    },
-    {
-      first: "Moon",
-      last: "Light",
-    },
-    {
-      first: "C",
-      last: "P",
-    },
-  ];
-
   return (
     <div className="App">
-      <Greet name="Moon Light" msgCount={30} isLoggedIn={true} />
-      <Person personName={personName} />
-      <PersonList nameList={nameList} />
+      <Oscar>
+        <Heading>Oscar goes to Leonardo Dicapario!</Heading>
+      </Oscar>
+      <Greet name="Moon light"  isLoggedIn={false} />
     </div>
   );
 }

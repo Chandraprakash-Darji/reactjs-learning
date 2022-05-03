@@ -1,13 +1,10 @@
-import CounterOne from "./components/customHook/CounterOne";
-import CounterTwo from "./components/customHook/Countertwo";
-
+import UserForm from "./components/customHook/UserForm";
 export default function App() {
   return (
     <div>
       <i>⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮</i>
       <hr />
-      <CounterOne />
-      <CounterTwo />
+      <UserForm />
       <hr />
       <i>⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮</i>
     </div>

@@ -1,17 +1,11 @@
-import { createContext } from "react";
-import ComponentC from "./components/Context API/ComponetnC";
-
-export const UserContext = createContext();
-export const ChannelContext = createContext();
+import CounterOne from "./components/useReducer/CounterOne";
 
 export default function App() {
   return (
     <div>
-      <UserContext.Provider value={"Vishwas"}>
-        <ChannelContext.Provider value={"Code Evaolution"}>
-          <ComponentC />
-        </ChannelContext.Provider>
-      </UserContext.Provider>
+      <i>⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮</i>
+      <CounterOne/>
+      <i>⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮</i>
     </div>
   );
 }

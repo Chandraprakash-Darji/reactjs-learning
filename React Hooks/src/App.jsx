@@ -1,10 +1,10 @@
-import DataFetchingUseReducer1 from "./components/Data Fetching/DataFetchingUseReducer1";
+import DataFetchingUseReducer from "./components/Data Fetching/DataFetchingUseReducer";
 
 export default function App() {
   return (
     <div>
       <i>⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮</i>
-      <DataFetchingUseReducer1 />
+      <DataFetchingUseReducer/>
       <i>⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮</i>
     </div>
   );

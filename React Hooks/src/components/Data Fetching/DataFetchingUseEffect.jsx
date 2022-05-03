@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
-const DataFetchingUseReducer1 = () => {
+const DataFetchingUseEffect = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [post, setPost] = useState({});
@@ -30,4 +30,4 @@ const DataFetchingUseReducer1 = () => {
   );
 };
 
-export default DataFetchingUseReducer1;
+export default DataFetchingUseEffect;

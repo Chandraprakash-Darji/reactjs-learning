@@ -1,13 +1,13 @@
-import DocTitleOne from "./components/customHook/DocTitleOne";
-import DocTitleTwo from "./components/customHook/DocTitleTwo";
+import CounterOne from "./components/customHook/CounterOne";
+import CounterTwo from "./components/customHook/Countertwo";
 
 export default function App() {
   return (
     <div>
       <i>⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮</i>
       <hr />
-      <DocTitleOne />
-      <DocTitleTwo/>
+      <CounterOne />
+      <CounterTwo />
       <hr />
       <i>⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮</i>
     </div>

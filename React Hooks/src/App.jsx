@@ -1,11 +1,13 @@
-import FocusInput from "./components/useRef/FocusInput";
+import Classtimer from "./components/useRef/Classtimer";
+import HookTimer from "./components/useRef/HookTimer";
 
 export default function App() {
   return (
     <div>
       <i>⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮</i>
       <hr />
-      <FocusInput />
+      <Classtimer/>
+      <HookTimer/>
       <hr />
       <i>⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮</i>
     </div>

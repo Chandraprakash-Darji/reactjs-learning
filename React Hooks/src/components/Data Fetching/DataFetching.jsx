@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 
 const DataFetching = () => {
-  const [post, setPost] = useState({});
+  const [post, setPost] = useState({}); 
   const [errorMsg, setErrorMsg] = useState(null);
   const [postID, setPostID] = useState(1);
   const [idFromButtonClicked, setIdFromButtonClicked] = useState(1);

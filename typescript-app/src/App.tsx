@@ -1,15 +1,12 @@
 import "./App.css";
-import Greet from "./components/Props Type/Greet";
-import Heading from "./components/Props Type/Heading";
-import Oscar from "./components/Props Type/Oscar";
+import Button from "./components/Props Type/Button";
+import Input from "./components/Props Type/Input";
 
 function App() {
   return (
     <div className="App">
-      <Oscar>
-        <Heading>Oscar goes to Leonardo Dicapario!</Heading>
-      </Oscar>
-      <Greet name="Moon light"  isLoggedIn={false} />
+      <Button handleClick={(event, id) => console.log("clicked", event, id)} />
+      <Input value="" handleClick={(event) => console.log(event)} />
     </div>
   );
 }

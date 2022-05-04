@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 type Authuser = {
   name: string;
@@ -6,21 +6,18 @@ type Authuser = {
 };
 
 const User = () => {
-  const [user, setUser] = useState<Authuser | null>(null);
+  const [user, setUser] = useState<Authuser>({} as Authuser);
   const handleLogin = () => {
     setUser({
       name: "MoonLight",
       email: "moonlight@aa.com",
     });
   };
-  const handleLogout = () => {
-    setUser(null);
-  };
+  useEffect(() => handleLogin(), []);
 
   return (
     <div>
       <button onClick={handleLogin}>Login</button>
-      <button onClick={handleLogout}>Logout</button>
       <h2>
         {user ? (
           <>

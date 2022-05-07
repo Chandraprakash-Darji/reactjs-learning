@@ -1,9 +1,9 @@
-import RandomNumber from "./components/restrection/RandomNumber";
+import Toast from "./components/templateLiterals/Toast";
 
 function App() {
   return (
     <div className="App">
-      <RandomNumber value={10} isZero/>
+      <Toast position="center" />
     </div>
   );
 }

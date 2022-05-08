@@ -1,11 +1,11 @@
-import MuiBreadCrumbs from "./components/MuiBreadCrumbs";
+import MuiDrawer from "./components/MuiDrawer";
 import MuiNavBar from "./components/MuiNavBar";
 
 function App() {
   return (
     <div className="App">
       <MuiNavBar/>
-      <MuiBreadCrumbs/>
+      <MuiDrawer/>
     </div>
   );
 }

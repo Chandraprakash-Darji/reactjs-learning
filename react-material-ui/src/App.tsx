@@ -1,9 +1,9 @@
-import MuiButtons from "./components/MuiButtons";
+import MuiTextField from "./components/MuiTextField";
 
 function App() {
   return (
     <div className="App">
-      <MuiButtons/>
+      <MuiTextField />
     </div>
   );
 }

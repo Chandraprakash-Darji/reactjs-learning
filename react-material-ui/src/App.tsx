@@ -1,9 +1,9 @@
-import MuiLayout from "./components/MuiLayout";
+import MuiCard from "./components/MuiCard";
 
 function App() {
   return (
     <div className="App">
-      <MuiLayout/>
+      <MuiCard/>
     </div>
   );
 }

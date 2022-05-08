@@ -1,9 +1,9 @@
-import MuiCard from "./components/MuiCard";
+import MuiAccordian from "./components/MuiAccordian";
 
 function App() {
   return (
     <div className="App">
-      <MuiCard/>
+      <MuiAccordian/>
     </div>
   );
 }

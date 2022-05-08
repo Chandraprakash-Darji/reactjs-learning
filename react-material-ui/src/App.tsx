@@ -1,9 +1,9 @@
-import MuiAccordian from "./components/MuiAccordian";
+import MuiNavBar from "./components/MuiNavBar";
 
 function App() {
   return (
     <div className="App">
-      <MuiAccordian/>
+      <MuiNavBar/>
     </div>
   );
 }

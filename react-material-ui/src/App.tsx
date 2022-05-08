@@ -1,9 +1,9 @@
-import MuiCheackbox from "./components/MuiCheackbox";
+import MuiSwitch from "./components/MuiSwitch";
 
 function App() {
   return (
     <div className="App">
-      <MuiCheackbox/>
+      <MuiSwitch/>
     </div>
   );
 }

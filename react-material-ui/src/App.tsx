@@ -1,13 +1,11 @@
-import MuiAvatar from "./components/MuiAvatar";
 import MuiNavBar from "./components/MuiNavBar";
-import MuiSpeedDial from "./components/MuiSpeedDial";
+import MuiSnackBar from "./components/MuiSnackBar";
 
 function App() {
   return (
     <div className="App">
       <MuiNavBar />
-      <MuiSpeedDial />
-      <MuiAvatar/>
+      <MuiSnackBar/>
     </div>
   );
 }

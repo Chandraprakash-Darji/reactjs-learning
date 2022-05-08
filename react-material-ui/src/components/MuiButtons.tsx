@@ -3,10 +3,33 @@ import {
   ButtonGroup,
   IconButton,
   Stack,
+  ToggleButton,
+  ToggleButtonGroup,
   Typography,
 } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
+import FormatBoldRoundedIcon from "@mui/icons-material/FormatBoldRounded";
+import FormatItalicRoundedIcon from "@mui/icons-material/FormatItalicRounded";
+import FormatUnderlinedRoundedIcon from "@mui/icons-material/FormatUnderlinedRounded";
+import React, { useState } from "react";
+
 const MuiButtons = () => {
+  const [format, setFormat] = useState<string[]>([]);
+  const [formatEx, setFormatEx] = useState<string | null>(null);
+  const handleFormatChange = (
+    _event: React.MouseEvent<HTMLElement>,
+    updatedFormat: string[]
+  ) => {
+    console.log(updatedFormat);
+    setFormat(updatedFormat);
+  };
+  const handleFormatExChange = (
+    _event: React.MouseEvent<HTMLElement>,
+    updatedFormat: string | null
+  ) => {
+    console.log(updatedFormat);
+    setFormatEx(updatedFormat);
+  };
   return (
     <Stack spacing={4}>
       <Stack spacing={2} direction="row">
@@ -130,16 +153,87 @@ const MuiButtons = () => {
             <Button>Center</Button>
             <Button>Right</Button>
           </ButtonGroup>
-          <ButtonGroup aria-label="alignment btn vertical" variant="contained" orientation="vertical" size="large">
+          <ButtonGroup
+            aria-label="alignment btn vertical"
+            variant="contained"
+            orientation="vertical"
+            size="large"
+          >
             <Button>Left</Button>
             <Button>Center</Button>
             <Button>Right</Button>
           </ButtonGroup>
-          <ButtonGroup aria-label="alignment btn secondary color" variant="outlined" color="secondary" size="small">
+          <ButtonGroup
+            aria-label="alignment btn secondary color"
+            variant="outlined"
+            color="secondary"
+            size="small"
+          >
             <Button>Left</Button>
             <Button>Center</Button>
             <Button>Right</Button>
           </ButtonGroup>
+        </Stack>
+        <Stack direction="row">
+          <ToggleButtonGroup
+            aria-label="text Formating"
+            value={format}
+            onChange={handleFormatChange}
+            size="small"
+            color="success"
+          >
+            <ToggleButton value="bold" aria-label="bold">
+              <FormatBoldRoundedIcon />
+            </ToggleButton>
+            <ToggleButton value="italic" aria-label="italic">
+              <FormatItalicRoundedIcon />
+            </ToggleButton>
+            <ToggleButton value="undeline" aria-label="underline">
+              <FormatUnderlinedRoundedIcon />
+            </ToggleButton>
+          </ToggleButtonGroup>
+        </Stack>
+
+        <Stack direction="row">
+          <ToggleButtonGroup
+            aria-label="text Formating"
+            value={format}
+            onChange={handleFormatChange}
+            size="small"
+            color="success"
+            orientation="vertical"
+          >
+            <ToggleButton value="bold" aria-label="bold">
+              <FormatBoldRoundedIcon />
+            </ToggleButton>
+            <ToggleButton value="italic" aria-label="italic">
+              <FormatItalicRoundedIcon />
+            </ToggleButton>
+            <ToggleButton value="undeline" aria-label="underline">
+              <FormatUnderlinedRoundedIcon />
+            </ToggleButton>
+          </ToggleButtonGroup>
+        </Stack>
+
+        <Stack direction="row">
+          <ToggleButtonGroup
+            aria-label="text Formating"
+            value={formatEx}
+            onChange={handleFormatExChange}
+            size="small"
+            color="success"
+            exclusive
+          >
+            <ToggleButton value="bold" aria-label="bold">
+              <FormatBoldRoundedIcon />
+            </ToggleButton>
+            <ToggleButton value="italic" aria-label="italic">
+              <FormatItalicRoundedIcon />
+            </ToggleButton>
+            <ToggleButton value="undeline" aria-label="underline">
+              <FormatUnderlinedRoundedIcon />
+            </ToggleButton>
+          </ToggleButtonGroup>
         </Stack>
       </Stack>
     </Stack>

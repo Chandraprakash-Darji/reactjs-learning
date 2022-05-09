@@ -1,11 +1,9 @@
-import MuiNavBar from "./components/MuiNavBar";
-import MuiSnackBar from "./components/MuiSnackBar";
+import MuiBottomnavigation from "./components/MuiBottomnavigation";
 
 function App() {
   return (
     <div className="App">
-      <MuiNavBar />
-      <MuiSnackBar/>
+      <MuiBottomnavigation/>  
     </div>
   );
 }

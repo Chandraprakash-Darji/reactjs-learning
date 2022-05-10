@@ -1,9 +1,9 @@
-import MuiBottomnavigation from "./components/MuiBottomnavigation";
+import MuiBadge from "./components/MuiBadge";
 
 function App() {
   return (
     <div className="App">
-      <MuiBottomnavigation/>  
+      <MuiBadge/>
     </div>
   );
 }
